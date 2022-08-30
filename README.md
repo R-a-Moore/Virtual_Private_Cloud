@@ -2,11 +2,15 @@
 
 Previously on the cloud, network space was shared (like a house-share apartment), however organisations wanted specific control and authority to diclose whom can and cannot traffic the network and access resources or specific infrastructure. Therefore they were given their own private network.
 
+![AWS VPC](https://user-images.githubusercontent.com/47668244/187456426-f82a9d08-414d-468c-9678-450d80f78101.png)
+
 ### Defintion
 
 A Virtual Private Cloud (VPC) is a virtual network (a segregated range of IPv4 addresses), which is logically isolated from other virtual networks on the AWS cloud.
 
 VPCs allow for us as a DevOps engineers / or an organisation to have control over the traffic on our cloud infrastructure that we're using, by segregating it from infrastructure which we do not own or individuals (requests) which we do not have control of.
+
+![VPCs](https://user-images.githubusercontent.com/47668244/187456485-d0e39b3f-7efa-40b1-9b43-0d6dacab90d2.png)
 
 ## Subnet/s
 
