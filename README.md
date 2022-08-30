@@ -12,26 +12,6 @@ VPCs allow for us as a DevOps engineers / or an organisation to have control ove
 
 ![VPCs](https://user-images.githubusercontent.com/47668244/187456485-d0e39b3f-7efa-40b1-9b43-0d6dacab90d2.png)
 
-## Subnet/s
-
-Where the private cloud (network), is divied up, into public and private subnets, the latter of which which allows for external sources to access relevant portions of the VPC. Think of it as a limited public space.
-
-### Public Addresses
-
-### Private Addresses
-
-
-NACL
-
-Security groups
-
-route tables
-
-### Internet Gateways
-
-The port / access route through which external sources may enter/access the 
-
-
 ## CIDR Blocks 
 
 - simply address/post code
@@ -42,3 +22,29 @@ When you create a VPC, you must dictate / specify the range of IPv4 addresses wh
 
 - An IPv4 address is always 32 bits, with 4 groups of up to 3 decimal digits (from 0-255), separated by full-stops; 10.0.1.0
 - An IPv4 CIDR block expands upon this by adding a forwards slash at the end - / followed by a number ranging from 0-32. For example; 10.0.0.0/16
+
+## Subnet/s
+
+Where the private cloud (network), is divied up, into public and private subnets, the latter of which which allows for external sources to access relevant portions of the VPC. Think of it as a limited public space.
+
+### Public Addresses
+
+### Private Addresses
+
+### Internet Gateways
+
+The port / access route through which external sources may enter/access the VPC.
+
+## NACL
+
+Network Access Control List (NACL or Network ACL), 
+
+Security groups
+
+## Route Tables
+
+A route table contains a set of rules - *routes* - that determine where network traffic from your subnet or gateway may be directed. 
+
+Route tables are constructed of a *Destination* and a a *Target*. The destination is an IPv4 addresses within your CIDR block. The target refers to the internet gateway through which the route must pass in your VPC.
+
+
