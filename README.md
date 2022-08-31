@@ -1,6 +1,6 @@
 # Virtual Private Cloud
 
-[AWS' explanation of it all](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
+[As Explained by AWS](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
 
 Previously on the cloud, network space was shared (like a house-share apartment), however organisations wanted specific control and authority to diclose whom can and cannot traffic the network and access resources or specific infrastructure. Therefore they were given their own private network.
 

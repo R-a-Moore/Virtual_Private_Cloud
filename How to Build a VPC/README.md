@@ -59,6 +59,7 @@ naming convention `eng122-christian-devops-rt`
 select appropriate vpc
 
 
+
 ### Make Rules
 
 However Now the route table is floating, it doesn't know where to connect to the subnet
