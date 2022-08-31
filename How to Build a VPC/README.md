@@ -1,6 +1,6 @@
 # Steps to Building a VPC on AWS
 
-![VPCs](https://user-images.githubusercontent.com/47668244/187666006-6f5813a0-f41b-4490-bc22-200ff7a802ff.png)
+![VPCs](https://user-images.githubusercontent.com/47668244/187684716-edce20ab-bf1a-4078-89f2-bb4b153ca13b.png)
 
 ## Step 1 - create a VPC
 
@@ -72,3 +72,5 @@ edit routes --> add routes -->
 fill in the destination; `0.0.0.0/0`
 
 fill in the target (type in internet gateway, and the option for the one you've created should appear, select it)
+
+Now that we've set up our VPC, we can create or migrate our instances inside it; [like so!](https://aws.amazon.com/premiumsupport/knowledge-center/move-ec2-instance/)
