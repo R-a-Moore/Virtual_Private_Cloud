@@ -4,6 +4,8 @@
 
 ## Step 1 - create a VPC
 
+![create new vpc](https://user-images.githubusercontent.com/47668244/187734352-4d1c0918-8ded-474c-a3c2-fc90f9cf0cb0.png)
+
 create vpc, with CIDR block 10.0.0.0/16
 
 aws --> vpc --> click 'create vpc'
@@ -20,7 +22,8 @@ aws --> vpc --> click 'create vpc'
 
 - add whatever tags you've like (it should )
 
-assign your own ip for the CIDR - 10.0.4.0/24
+![vpc settings](https://user-images.githubusercontent.com/47668244/187734387-14a6f6b7-e096-4c81-9eba-067cadb21430.png)
+
 
 ## Step 2 - create internet, for the gateway
 
@@ -38,6 +41,8 @@ click actions --> attach to vpc --> select vpc & click attach
 
 ## Step 3 - create public subnet
 
+![create new subnet](https://user-images.githubusercontent.com/47668244/187734415-583653cd-367b-49cd-a233-3a8fa9df4b33.png)
+
 sidebar on left --> subnets --> create subnet
 
 select vpc to create subnet inside --> name subnet
@@ -48,6 +53,8 @@ naming convention: `eng122-christian-subnet-public`
 
 - enter ipv4 CIDR block: `10.0.4.0/24`
 
+![subnet settings](https://user-images.githubusercontent.com/47668244/187734461-8460b085-6b67-42c1-939c-6a90e89488f0.png)
+
 ## Step 4 - Route Table
 
 Subnet doenst know where to connect to it
@@ -57,8 +64,6 @@ sidebar on left --> route tables --> create route table
 naming convention `eng122-christian-devops-rt`
 
 select appropriate vpc
-
-
 
 ### Make Rules
 
@@ -73,5 +78,7 @@ edit routes --> add routes -->
 fill in the destination; `0.0.0.0/0`
 
 fill in the target (type in internet gateway, and the option for the one you've created should appear, select it)
+
+![route table settings](https://user-images.githubusercontent.com/47668244/187734611-49974905-5dca-424c-937c-40dbf5bbc239.png)
 
 Now that we've set up our VPC, we can create or migrate our instances inside it; [like so!](https://aws.amazon.com/premiumsupport/knowledge-center/move-ec2-instance/)
