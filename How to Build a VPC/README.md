@@ -69,6 +69,6 @@ However, now it's only connected to the VPC, it doesn't give access to the inter
 
 edit routes --> add routes --> 
 
-fill in the destination; `0.0.0.0/16`
+fill in the destination; `0.0.0.0/0`
 
 fill in the target (type in internet gateway, and the option for the one you've created should appear, select it)
