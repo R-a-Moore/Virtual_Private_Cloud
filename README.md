@@ -37,9 +37,19 @@ The port / access route through which external sources may enter/access the VPC.
 
 ## NACL
 
-Network Access Control List (NACL or Network ACL), 
+Network Access Control List (NACL or Network ACL), allows or denies specific inbound or outbound traffic at the subnet level.  
 
-Security groups
+NACLs are separate to security groups. They are an additional/separate layer of security. 
+
+### NACLs VS Security Groups
+
+An NACL Works on a subnet level, and is applied to all instances on that associated subnet. As opposed to a security group, which operates on an resource (instance) level. When you launch an EC2 instance you can associate it with one or more security groups. Security groups only supports allow rules, whereas NACLs support allow and deny rules. Secuirty groups; rules are elevated before deciding whether to allow traffic, NACLs; elevates rules in order, in numerical ascending order, when deciding whether to allow traffic or not. 
+
+Security groups are *stateful*, return traffic is allowed, regardless of the rules. NACLs are *stateless*, returning traffic must be explicitly allowed by rules.
+
+## IAM
+
+Identity and Access Management (IAM), is an AWS control, which is used to specify who in an organisation's VPC has permissions to create and manage resources and infrastructure in that VPC.
 
 ## Route Tables
 
