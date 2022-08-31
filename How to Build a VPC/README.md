@@ -1,6 +1,6 @@
 # Steps to Building a VPC on AWS
 
-![VPCs](https://user-images.githubusercontent.com/47668244/187684509-9c157bb0-4849-4d8f-bfe9-1d8b30073dda.png)
+![VPCs](https://user-images.githubusercontent.com/47668244/187684716-edce20ab-bf1a-4078-89f2-bb4b153ca13b.png)
 
 ## Step 1 - create a VPC
 
