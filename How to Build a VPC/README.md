@@ -72,3 +72,5 @@ edit routes --> add routes -->
 fill in the destination; `0.0.0.0/16`
 
 fill in the target (type in internet gateway, and the option for the one you've created should appear, select it)
+
+Now that we've set up our VPC, we can create or migrate our instances inside it; [like so!](https://aws.amazon.com/premiumsupport/knowledge-center/move-ec2-instance/)
