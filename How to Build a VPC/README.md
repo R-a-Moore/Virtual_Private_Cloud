@@ -82,3 +82,9 @@ fill in the target (type in internet gateway, and the option for the one you've 
 ![route table settings](https://user-images.githubusercontent.com/47668244/187734611-49974905-5dca-424c-937c-40dbf5bbc239.png)
 
 Now that we've set up our VPC, we can create or migrate our instances inside it; [like so!](https://aws.amazon.com/premiumsupport/knowledge-center/move-ec2-instance/)
+
+### In Case of Error
+
+there may be the case that you are unable to SSH into your instance, then it may be the case that you haven't allowed the appropriate IPs (i.i, `0.0.0.0/0`) on your route table. 
+
+However, note that this should only be for your public subnets. You don't want to have free access to a private subnet, it negates it being called a 'private subnet' in the first place.
