@@ -1,5 +1,7 @@
 # Steps to Building a VPC on AWS
 
+![VPCs](https://user-images.githubusercontent.com/47668244/187666006-6f5813a0-f41b-4490-bc22-200ff7a802ff.png)
+
 ## Step 1 - create a VPC
 
 create vpc, with CIDR block 10.0.0.0/16
