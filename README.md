@@ -47,6 +47,8 @@ An NACL Works on a subnet level, and is applied to all instances on that associa
 
 Security groups are *stateful*, return traffic is allowed, regardless of the rules. NACLs are *stateless*, returning traffic must be explicitly allowed by rules.
 
+![nacl vs security group comparison](https://user-images.githubusercontent.com/47668244/187656855-66d5ebab-26df-4c9f-aec5-5d380452ad91.png)
+
 ## IAM
 
 Identity and Access Management (IAM), is an AWS control, which is used to specify who in an organisation's VPC has permissions to create and manage resources and infrastructure in that VPC.
